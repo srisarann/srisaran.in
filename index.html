@@ -5,15 +5,25 @@
 		<title>Srisaran.in</title>
 		<style>
 			body {
-				font-family: sans-serif;
+				font-family: San Francisco;
 				top: 0;
 				left: 0;
 				margin: 0;
-
+				background-image: url('FaceMask_Half.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: auto;
 			}
+
+			@font-face {
+				font-family: "San Francisco";
+				font-weight: 400;
+				src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+			}
+
 			.nav-bar {
 				background-color: rgb(255, 204, 255, 0.3);
-				backdrop-filter: blur(8px);
+				backdrop-filter: blur(5px);
 				overflow: hidden;
 				position: fixed;
 				top: 0;
@@ -39,18 +49,23 @@
 				padding: 15px;
 			}
 
-			.body-card-top {
+			.body-card {
 				max-width: 980px;
 				margin: 0 auto;
 				margin-top: 60px;
   				height: 1000px;
 				padding: 15px;
+				border: 10px;
+				background-color: rgb(166, 141, 200);
+				border-radius: 2%;
 			}
-			.body-card {
-				max-width: 980px;
-				margin: 0 auto;
+
+			.body-heading {
+				text-align: center;
+				font-weight: bolder;
+			}
+			.body-content {
 				padding: 15px;
-				height: 1000px;
 			}
 
 		</style>
@@ -65,15 +80,21 @@
 				</div>
 			</div>
 
-			<div class="body-card-top">
-				<span class="heading">About me</span>
-				<span>Hello there, </span><span>Greetings</span>
+			<div class="body-card">
+				<div class="body-heading">About me</div>
+				
+				<div class="body-content">
+					<span>Hello there, </span><span>Greetings</span>
+				</div>
 			</div>
 
 			<div class="body-card">
-				<span class="heading">Social</span>
-				<span>Facebook</span>
-				<span>Instagram</span>
+				<div class="body-heading">Social</div>
+
+				<div class="body-content">
+					<span>Facebook</span>
+					<span>Instagram</span>
+				</div>
 			</div>
 	</body>
 </html>
