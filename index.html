@@ -4,68 +4,76 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Srisaran.in</title>
 		<style>
-			.division {
-				text-align: justify;
-				margin: 12px;
-				background-color: #ffffff;
-				border: 1px solid #6D8299;
-				border-radius: 8px;
-				padding: 5px;
-				font-size: medium;
+			body {
 				font-family: sans-serif;
-				color: rgb(40, 91, 185);
-				box-shadow: 1px 1px 8px #707070;
+				top: 0;
+				left: 0;
+				margin: 0;
+
+			}
+			.nav-bar {
+				background-color: rgb(255, 204, 255, 0.3);
+				backdrop-filter: blur(8px);
+				overflow: hidden;
+				position: fixed;
+				top: 0;
+				width: 100%;
 			}
 
-			.profile {
-				float:right;
-				border: 2px solid #6D8299;
-				margin-left: 50px;
-				border-radius: 50%;
-				width: 100px;
+			.nav-bar-content {
+				max-width: 980px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			
+			.nav-bar-title {
+				font-weight: bold;
+				padding: 15px;
+				display:inline-block;
 			}
 
-			h1 {
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-				color: rgb(40, 91, 185);
+			.nav-bar-link {
+				float: right;
+				margin-top: 0px;
+				display:inline-block;
+				padding: 15px;
 			}
 
-			h3 {
-				font-family: sans-serif;
-				color: rgb(40, 91, 185);
+			.body-card-top {
+				max-width: 980px;
+				margin: 0 auto;
+				margin-top: 60px;
+  				height: 1000px;
+				padding: 15px;
+			}
+			.body-card {
+				max-width: 980px;
+				margin: 0 auto;
+				padding: 15px;
+				height: 1000px;
 			}
 
-			.disc {
-				font-family: monospace;
-				color: rgb(40, 91, 185);
-			}
-
-			.contact {
-				margin-right: 20px;
-				margin-left: 20px;
-				font-size: 15px;
-			}
 		</style>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
-		<div class=division>
-			<span>
-			<img class="profile" src="profile.jpg"> </span>
-			<span>
-				<h1 style="margin: 2px 2px 2px 10px;">Srisaran N</h1>
-				<h3 style="margin: 2px 2px 2px 10px;">Test Engineer</h3>
-				<p class=disc  style="margin: 2px 2px 2px 10px;">I am an energetic, ambitious resource, wish to be part of an organization wherein I could utilize my
-					knowledge towards mutual development of myself and organization goals.</p>
-			</span>
-		</div>
+			<div class="nav-bar">
+				<div class="nav-bar-content">
+					<span class="nav-bar-title">Srisaran.in</span>
+					<span class="nav-bar-link">About me</span>
+					<span class="nav-bar-link">Social</span>
+				</div>
+			</div>
 
-		<div class="division" style="text-align:center;">
-			<span class="contact"><i class="fa fa-envelope" style="font-size:14px"></i> mailtosrisaran@gmail.com</span>
-			<span class="contact"><i class="fa fa-mobile-phone" style="font-size:18px"></i> +91 89730 80282</span>
-			<span class="contact"><i class="fa fa-map-marker" style="font-size:16px"></i> Coimbathore</span>
-		</div>
+			<div class="body-card-top">
+				<span class="heading">About me</span>
+				<span>Hello there, </span><span>Greetings</span>
+			</div>
+
+			<div class="body-card">
+				<span class="heading">Social</span>
+				<span>Facebook</span>
+				<span>Instagram</span>
+			</div>
 	</body>
 </html>
