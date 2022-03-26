@@ -49,15 +49,22 @@
 				padding: 15px;
 			}
 
+			.nav-bar-link-text {
+				border: 1px solid black;
+				padding: 2px 7px;
+				border-radius: 5px;
+			}
+
 			.body-card {
 				max-width: 980px;
 				margin: 0 auto;
 				margin-top: 60px;
-  				height: 1000px;
+  				height: 100px;
 				padding: 15px;
 				border: 10px;
-				background-color: rgb(166, 141, 200);
-				border-radius: 2%;
+				background-color: rgb(230, 178, 230);
+				border-radius: 10px;
+				box-shadow:0 1px 1px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 4px 4px rgba(0,0,0,0.12),0 8px 8px rgba(0,0,0,0.12),0 16px 16px rgba(0,0,0,0.12);
 			}
 
 			.body-heading {
@@ -75,8 +82,10 @@
 			<div class="nav-bar">
 				<div class="nav-bar-content">
 					<span class="nav-bar-title">Srisaran.in</span>
-					<span class="nav-bar-link">About me</span>
-					<span class="nav-bar-link">Social</span>
+						<span class="nav-bar-link">
+							<a href="#"><span class="nav-bar-link-text">About me</span></a>
+							<a href="#"><span class="nav-bar-link-text">Social</span></a>
+						</span>
 				</div>
 			</div>
 
@@ -96,5 +105,9 @@
 					<span>Instagram</span>
 				</div>
 			</div>
+
+
+
+			<a href="www.google.com" >Google</a>
 	</body>
 </html>
