@@ -43,23 +43,33 @@
 			}
 
 			.nav-bar-link {
-				float: right;
 				margin-top: 0px;
 				display:inline-block;
 				padding: 15px;
+				float: right;
 			}
 
 			.nav-bar-link-text {
-				border: 1px solid black;
+				border: 1px solid rgba(255, 255, 255, 0);
 				padding: 2px 7px;
 				border-radius: 5px;
+				color: rgba(0,0,0);
+			}
+
+			.nav-bar-link-text:hover {
+				border: 1px solid rgb(255, 204, 255, 0.3);
+				background-color: rgb(230, 178, 230);
+			}
+
+			a {
+				text-decoration: none !important;
 			}
 
 			.body-card {
 				max-width: 980px;
 				margin: 0 auto;
 				margin-top: 60px;
-  				height: 100px;
+  				height: auto;
 				padding: 15px;
 				border: 10px;
 				background-color: rgb(230, 178, 230);
@@ -101,8 +111,11 @@
 				<div class="body-heading">Social</div>
 
 				<div class="body-content">
-					<span>Facebook</span>
-					<span>Instagram</span>
+					<span>Facebook</span><br>
+					<span>Instagram</span><br>
+					<span>Discord</span><br>
+					<span>Instagram</span><br>
+					<span>Instagram</span><br>
 				</div>
 			</div>
 	</body>
